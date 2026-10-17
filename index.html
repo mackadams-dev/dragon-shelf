@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0806"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Dragon Shelf">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css"><title>Dragon Shelf</title></head><body>
+<div id="bgdragon" aria-hidden="true"><svg viewBox="0 0 600 360"><g fill="#7a4420">
+<path class="wl" d="M300 170 C260 120 200 60 90 30 C130 70 140 95 120 110 C160 105 170 120 150 140 C200 130 230 150 280 185Z"/>
+<path class="wr" d="M300 170 C340 120 400 60 510 30 C470 70 460 95 480 110 C440 105 430 120 450 140 C400 130 370 150 320 185Z"/>
+<path d="M300 140 C312 140 318 152 316 165 C330 190 326 215 312 240 C304 262 300 290 320 315 C334 332 360 334 372 326 C352 344 312 342 296 318 C282 296 288 262 292 240 C280 215 278 190 290 168 C284 158 290 140 300 140Z"/>
+<path d="M300 140 L292 118 L300 126 L308 118Z"/></g></svg></div><header id="hdr"><svg class="wing" viewBox="0 0 512 340"><use href="#wingp"/></svg><h1>Dragon Shelf</h1>
+<div id="stats"><div class="big"><b id="sTotal">0</b><span>books read</span></div><div><b id="sUnique">0</b><span>unique titles</span></div><div><b id="sYear">0</b><span id="sYearL">this year</span></div></div></header>
+<main id="view"></main>
+<button id="fab" aria-label="Log a book">+ Log a Book</button>
+<div id="modal" hidden></div><canvas id="fx"></canvas>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d27a"/><stop offset="1" stop-color="#c2741f"/></linearGradient>
+<path id="wingp" fill="url(#gg)" d="M256 330 C200 260 120 250 70 170 C140 200 180 190 220 230 C200 180 210 140 256 110 C302 140 312 180 292 230 C332 190 372 200 442 170 C392 250 312 260 256 330Z"/></defs></svg>
+<script src="app.js"></script></body></html>
