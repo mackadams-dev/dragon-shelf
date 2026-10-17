@@ -35,11 +35,11 @@ label{display:block;margin:12px 0 4px;color:var(--mut);font-size:14px}
 .toast{position:fixed;top:40%;left:50%;transform:translate(-50%,-50%);z-index:21;background:#000d;border:1px solid var(--gold);color:var(--gold);padding:18px 26px;border-radius:18px;font-size:22px;text-align:center;animation:pop 2.2s forwards}
 @keyframes pop{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}15%{opacity:1;transform:translate(-50%,-50%) scale(1.05)}80%{opacity:1}100%{opacity:0}}
 .tools{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.tools button{flex:1}
-#bgdragon{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-#bgdragon svg{position:absolute;width:150vw;max-width:900px;top:22%;left:-20%;opacity:.22;filter:drop-shadow(0 0 30px #e0662a33) blur(1px);animation:glide 38s ease-in-out infinite alternate}
-#bgdragon .wl,#bgdragon .wr{transform-box:fill-box;animation:flap 6s ease-in-out infinite}
-#bgdragon .wl{transform-origin:right bottom}#bgdragon .wr{transform-origin:left bottom}
-@keyframes glide{0%{transform:translate(-10vw,4vh) rotate(-8deg)}50%{transform:translate(20vw,-6vh) rotate(-2deg)}100%{transform:translate(45vw,6vh) rotate(6deg)}}
-@keyframes flap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.82)}}
-@media (prefers-reduced-motion:reduce){#bgdragon svg,#bgdragon .wl,#bgdragon .wr{animation:none}}
 header,main{position:relative;z-index:1}
+#fab{z-index:5}
+#bgpages{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#bgpages i{position:absolute;top:-70px;width:var(--w);opacity:.16;will-change:transform;animation:fall var(--s) linear var(--d) infinite}
+#bgpages svg{display:block;width:100%;animation:flutter 4s ease-in-out var(--d) infinite alternate}
+@keyframes fall{0%{transform:translate3d(0,0,0)}50%{transform:translate3d(var(--x),55vh,0)}100%{transform:translate3d(0,112vh,0)}}
+@keyframes flutter{0%{transform:rotate(-25deg) scaleX(1)}50%{transform:rotate(10deg) scaleX(.6)}100%{transform:rotate(30deg) scaleX(1)}}
+@media (prefers-reduced-motion:reduce){#bgpages i,#bgpages svg{animation:none}#bgpages i{top:auto;transform:none}#bgpages i:nth-child(odd){top:30%}#bgpages i:nth-child(even){top:70%}}
